@@ -194,27 +194,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //   download section ke liye function jo resume ko force download karega
 
-  function forceDownload(event) {
-    event.preventDefault();
+ function forceDownload(e) {
+    e.preventDefault();
+
+    const fileUrl = "./File/Hemang-vashi-resume.pdf";
 
     const link = document.createElement("a");
 
-    // Resume ka path
-    link.href = "./File/Hemang-vashi-resume.pdf";
-
-    // Download hone par file name
+    link.href = fileUrl;
     link.download = "Hemang_Vashi_Resume.pdf";
-
-    // Hidden rakho
-    link.style.display = "none";
+    link.target = "_self";
 
     document.body.appendChild(link);
 
-    // Direct download trigger
     link.click();
 
     document.body.removeChild(link);
-
 }
 
 
