@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = document.createElement("a");
 
     // Resume ka path
-    link.href = "./images/Hemang-vashi-resume.pdf";
+    link.href = "./File/Hemang-vashi-resume.pdf";
 
     // Download hone par file name
     link.download = "Hemang_Vashi_Resume.pdf";
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.click();
 
     document.body.removeChild(link);
-    
+
 }
 
 
