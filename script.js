@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.click();
 
     document.body.removeChild(link);
+    
 }
 
 
