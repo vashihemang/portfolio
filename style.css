@@ -205,6 +205,10 @@ body.light-mode nav {
     background: #272727;
     padding: 40px; border-radius: 16px; width: 350px;
     transition: 0.4s; border: 1px solid rgba(255, 122, 0, 0.05);
+    border-left: 1px solid var(--accent);
+    border-top: 1px solid var(--accent);
+    border-right: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
     opacity: 0; transform: translateY(40px);
 }
 
@@ -631,17 +635,21 @@ body.light-mode .social-icons:hover {
             flex-wrap: wrap; 
         }
 
-        .projects-card  {
-            background: #272727;
-            padding: 30px; 
-            border-radius: 16px; 
-            width: 350px;
-            text-align: center;
-            text-decoration: none;
-            color: inherit;
-            transition: 0.4s; 
-            border: 1px solid rgba(255, 122, 0, 0.05);
-        }
+.projects-card {
+    background: #272727;
+    padding: 30px; 
+    border-radius: 16px; 
+    width: 350px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.4s; 
+    border: 1px solid rgba(255, 122, 0, 0.05);
+    border-top: 1px solid var(--accent); 
+    border-left: 1px solid var(--accent); 
+    border-right: 1px solid var(--accent); 
+    border-bottom: 1px solid var(--accent); 
+}
 
         .projects-card:hover { 
             transform: translateY(-10px); 
