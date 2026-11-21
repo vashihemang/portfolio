@@ -10,9 +10,10 @@
 
     <title>Resume | Hemang Vashi</title>
 
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- HTML2PDF Library for Dynamic PDF Generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
     </nav>
 
     <div class="resume-wrapper">
-        <div class="resume-page">
+        <div class="resume-page" id="resume-content">
             <header>
                 <h1>Hemang J. Vashi</h1>
                 <div class="contact-info">
@@ -54,10 +55,10 @@
             <section>
                 <h2 class="resume-heading">Technical Skills</h2>
                 <div class="additional-section">
-                    <p><span class="bold">Languages:</span> (Python), JavaScript, C, Java, SQL</p>
+                    <p><span class="bold">Languages:</span> Python, JavaScript, C, Java, SQL</p>
                     <p><span class="bold">AI/ML:</span> Machine Learning & Deep Learning Pipeline, Scikit-learn,
                         TensorFlow, NLP, Langchain</p>
-                    <p><span class="bold">Database:</span> Sqlite, PostgreSql</p>
+                    <p><span class="bold">Database:</span> SQLite, PostgreSQL</p>
                     <p><span class="bold">Web:</span> HTML5, CSS3, Flask, Jinja2, FastAPI</p>
                     <p><span class="bold">Testing tools:</span> Pytest, Postman</p>
                     <p><span class="bold">Cloud/Tools:</span> Git, GitHub, Docker</p>
@@ -80,114 +81,150 @@
                 </div>
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">X (GSEB) |SWAMI VIVEKANAND (G.J) SCHOOL</span>
+                        <span class="bold">X (GSEB) | SWAMI VIVEKANAND (G.J) SCHOOL</span>
                         <span class="text-right">71.5% | 2022</span>
                     </div>
                 </div>
             </section>
 
-
-
-           <section>
+            <section>
                 <h2>Academic Projects</h2>
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Ai-Power-Secure-Code-Reviewer | Python,Flask,Langchain,RAG,Ollama,Gemini
-                            Api</span>
+                        <span class="bold">Ai-Power-Secure-Code-Reviewer | Python, Flask, Langchain, RAG, Ollama, Gemini API</span>
                         <span class="text-right">2026</span>
                     </div>
                     <ul>
-                        <li><span class="bold"></span> AI application to scan and detect vulnerabilities. </li>
-                        <li><span class="bold"></span> Raised answer accuracy From 40% to 85% on 5-10 test entire code
-                            by adding reranking.</li>
+                        <li>AI application to scan and detect vulnerabilities.</li>
+                        <li>Raised answer accuracy from 40% to 85% on 5-10 test entire code by adding reranking.</li>
                     </ul>
                 </div>
 
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Edge-Device-Anomaly-Detector | Python,Flask,scapy,Deep learning
-                            model,Multithreading</span>
+                        <span class="bold">Edge-Device-Anomaly-Detector | Python, Flask, Scapy, Deep learning model, Multithreading</span>
                         <span class="text-right">2026</span>
                     </div>
                     <ul>
-                        <li><span class="bold"></span> AI application to monitoring nerwork traffing and detect attack.
-                        </li>
-                        <li><span class="bold"></span> Raised answer accuracy From 50% to 80% on 20-30 test using
-                            created my script by adding reranking.</li>
+                        <li>AI application to monitor network traffic and detect attacks.</li>
+                        <li>Raised answer accuracy from 50% to 80% on 20-30 tests by adding reranking.</li>
                     </ul>
                 </div>
 
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Medi-Scan | Python,Flask,FastAPI,Machine learning model, openrouter
-                            Api</span>
+                        <span class="bold">Medi-Scan | Python, Flask, FastAPI, Machine learning model, OpenRouter API</span>
                         <span class="text-right">2025</span>
                     </div>
                     <ul>
-                        <li><span class="bold"></span> AI application to provide details according your medician prompt.
-                        </li>
-                        <li><span class="bold"></span> Correct answer 80% to 90% according to provided dataset.</li>
+                        <li>AI application to provide details according to your medicine prompt.</li>
+                        <li>Correct answer 80% to 90% according to provided dataset.</li>
                     </ul>
                 </div>
 
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Banking & Diabetes prediction System | Python,Flask,Machine Learning
-                            model</span>
+                        <span class="bold">Banking & Diabetes Prediction System | Python, Flask, Machine Learning model</span>
                         <span class="text-right">2025</span>
                     </div>
                     <ul>
-                        <li><span class="bold"></span> machine learning techniques to analyze data and generate
-                            predictive insights for improved decision-making. </li>
-                        <li><span class="bold"></span>Correct answer 70% to 90% according to provided dataset.</li>
+                        <li>Machine learning techniques to analyze data and generate predictive insights for improved decision-making.</li>
+                        <li>Correct answer 70% to 90% according to provided dataset.</li>
                     </ul>
                 </div>
             </section>
-
-
 
             <section>
                 <h2>Certifications & Badges</h2>
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Intermediate & Introducation Machine Learning And Deep Learning - Kaggle
-                            Certificate</span>
+                        <span class="bold">Intermediate & Introduction Machine Learning And Deep Learning - Kaggle Certificate</span>
                         <span class="text-right">Completed</span>
                     </div>
                 </div>
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Introduction to prompt engineering with GitHub Copilot - Microsoft
-                            badge</span>
+                        <span class="bold">Introduction to Prompt Engineering with GitHub Copilot - Microsoft Badge</span>
                         <span class="text-right">Completed</span>
                     </div>
                 </div>
-
-
                 <div class="section-item">
                     <div class="flex-row">
-                        <span class="bold">Introduction to Generative AI - Google badge</span>
+                        <span class="bold">Introduction to Generative AI - Google Badge</span>
                         <span class="text-right">Completed</span>
                     </div>
                 </div>
-
                 <div class="section-item">
                     <div class="flex-row">
                         <span class="bold">Udemy Python Certificate</span>
                         <span class="text-right">Completed</span>
                     </div>
                 </div>
-                <div class="download-btn-container">
-                    <a href="./File/Hemang-vashi-resume.pdf" download="Hemang_Vashi_Resume.pdf" class="btn btn-solid"
-                    onclick="forceDownload(event)" class="btn btn-solid">
+
+                <div class="download-btn-container" id="download-btn-box">
+                    <button type="button" onclick="downloadUpdatedResume()" class="btn btn-solid">
                         <i class="fas fa-download"></i> Download Resume
-                    </a>
+                    </button>
                 </div>
             </section>
-            
         </div>
     </div>
+
     <script src="script.js"></script>
+<script>
+    function downloadUpdatedResume() {
+        const element = document.getElementById('resume-content');
+        const downloadBtn = document.getElementById('download-btn-box');
+
+        // 1. Download button hide karein
+        downloadBtn.style.display = 'none';
+
+        // 2. Original styles save karein
+        const originalStyle = element.getAttribute('style') || '';
+
+        // 3. Exact full width aur height measure karein
+        const width = element.scrollWidth;
+        const height = element.scrollHeight;
+
+        // 4. Capture ke liye element ko top-left corner par lock karein (zero clipping)
+        element.style.position = 'fixed';
+        element.style.top = '0';
+        element.style.left = '0';
+        element.style.margin = '0';
+        element.style.width = width + 'px';
+        element.style.zIndex = '99999';
+
+        const opt = {
+            margin:       0,
+            filename:     'Hemang_Vashi_Resume.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { 
+                scale: 2, 
+                useCORS: true,
+                width: width,
+                height: height,
+                windowWidth: width,
+                windowHeight: height,
+                x: 0,
+                y: 0,
+                scrollX: 0,
+                scrollY: 0
+            },
+            jsPDF: { 
+                unit: 'px', 
+                format: [width, height], 
+                orientation: width > height ? 'landscape' : 'portrait',
+                hotfixes: ['px_scaling']
+            }
+        };
+
+        // 5. PDF generate karein aur sab kuch wapas normal karein
+        html2pdf().set(opt).from(element).save().then(() => {
+            element.setAttribute('style', originalStyle);
+            downloadBtn.style.display = 'block';
+        });
+    }
+</script>
 </body>
 
 </html>
